@@ -2,7 +2,7 @@
 #SBATCH -q regular 
 #SBATCH -t 5:00:00 
 #SBATCH -L SCRATCH
-#SBATCH --mail-user=anirban.nandi@wustl.edu
+#SBATCH --mail-user=tom.chartrand@alleninstitute.org
 #SBATCH --mail-type=ALL
 #SBATCH -J analyze_Stage2 
 #SBATCH -C haswell 

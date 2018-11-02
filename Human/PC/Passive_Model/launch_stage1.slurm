@@ -6,7 +6,7 @@
 #SBATCH -C haswell 
 #SBATCH -N 1 
 
-export PASS_IH_REPO="/project/projectdirs/m2043/AIBS/ani/Human/PC/Passive_Ih_Repo"
+export PASS_IH_REPO="/project/projectdirs/m2043/AIBS/tmchart/All-active-Workflow/Human/PC/Passive_Model"
 
 JOBID_0=$(<Job_0.txt)
 PARENT_DIR=$(<pwd.txt)

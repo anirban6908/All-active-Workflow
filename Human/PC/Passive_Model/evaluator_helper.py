@@ -156,7 +156,7 @@ def create(protocol_path,feature_path, morph_path, param_path, mech_path):
     
     sim = ephys.simulators.NrnSimulator()
 
-    return ephys.evaluators.CellEvaluator(
+    return ephys.evaluators.CellEvaluatorTimed(
         cell_model=cell,
         param_names=param_names,
         fitness_protocols=fitness_protocols,

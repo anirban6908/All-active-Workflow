@@ -3,7 +3,7 @@
 PARENT_DIR=$(pwd)
 CELL_ID=${PARENT_DIR##*/}
 export PASS_DIR="Passive_Model"
-export PASSIVE_REPO="/project/projectdirs/m2043/AIBS/ani/Human/PC/Passive_Repo"
+export PASSIVE_REPO="/project/projectdirs/m2043/AIBS/tmchart/All-active-Workflow/Human/PC/Passive_Model"
 
 if [ ! -d "$PASS_DIR" ]; then
 	

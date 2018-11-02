@@ -6,7 +6,7 @@
 #SBATCH -C haswell 
 #SBATCH -N 1 
 
-export ALL_ACTIV_REPO="/project/projectdirs/m2043/AIBS/ani/Human/PC/All_Active1_Repo"
+export ALL_ACTIV_REPO="/project/projectdirs/m2043/AIBS/tmchart/All-active-Workflow/Human/PC/All_Active1"
 
 JOBID_1=$(<Job_1.txt)
 PARENT_DIR=$(<pwd.txt)

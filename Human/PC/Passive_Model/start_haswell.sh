@@ -5,7 +5,7 @@
 #SBATCH -t 4:00:00
 #SBATCH -C haswell
 #SBATCH -L SCRATCH
-#SBATCH --mail-user=anirban.nandi@wustl.edu
+#SBATCH --mail-user=tom.chartrand@alleninstitute.org
 #SBATCH --mail-type=ALL
 #SBATCH -J Stage0
 #SBATCH --signal=B:USR1@60
