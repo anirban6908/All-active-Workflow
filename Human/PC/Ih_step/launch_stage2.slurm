@@ -6,6 +6,7 @@
 #SBATCH -C haswell 
 #SBATCH -N 1 
 
+set -ex
 export ALL_ACTIV_REPO="/project/projectdirs/m2043/AIBS/tmchart/All-active-Workflow/Human/PC/All_Active1"
 
 JOBID_1=$(<Job_1.txt)

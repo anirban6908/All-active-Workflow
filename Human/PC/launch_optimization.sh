@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -ex
 PARENT_DIR=$(pwd)
 CELL_ID=${PARENT_DIR##*/}
 export PASS_DIR="Passive_Model"
