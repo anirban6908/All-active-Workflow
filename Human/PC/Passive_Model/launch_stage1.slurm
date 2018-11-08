@@ -2,6 +2,8 @@
 #SBATCH -q debug
 #SBATCH -t 0:30:00 
 #SBATCH -L SCRATCH
+#SBATCH --mail-user=tom.chartrand@alleninstitute.org
+#SBATCH --mail-type=ALL
 #SBATCH -J launch_Stage_1 
 #SBATCH -C haswell 
 #SBATCH -N 1 
@@ -12,7 +14,7 @@ JOBID_0=$(<Job_0.txt)
 PARENT_DIR=$(<pwd.txt)
 
 export PASS_IH_DIR=$PARENT_DIR/Ih_Step
-mkdir $PASS_IH_DIR
+mkdir -p $PASS_IH_DIR
 cp pwd.txt $PASS_IH_DIR/
 
 

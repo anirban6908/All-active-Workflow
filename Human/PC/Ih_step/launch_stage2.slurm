@@ -2,6 +2,8 @@
 #SBATCH -q debug
 #SBATCH -t 0:30:00 
 #SBATCH -L SCRATCH
+#SBATCH --mail-user=tom.chartrand@alleninstitute.org
+#SBATCH --mail-type=ALL
 #SBATCH -J launch_Stage_2 
 #SBATCH -C haswell 
 #SBATCH -N 1 
@@ -13,7 +15,7 @@ JOBID_1=$(<Job_1.txt)
 PARENT_DIR=$(<pwd.txt)
 
 export ALL_ACTIV_DIR=$PARENT_DIR/All_Active1
-mkdir $ALL_ACTIV_DIR
+mkdir -p $ALL_ACTIV_DIR
 
 
 STATUS_1=$(sacct -j ${JOBID_1} -o State| sed -n '3 p'| xargs) # get the status of the job 
