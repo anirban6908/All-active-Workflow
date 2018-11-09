@@ -9,12 +9,12 @@
 #SBATCH -N 1 
 
 set -ex
-export ALL_ACTIV_REPO="/project/projectdirs/m2043/AIBS/tmchart/All-active-Workflow/Human/PC/All_Active1"
+export ALL_ACTIV_REPO="/project/projectdirs/m2043/AIBS/tmchart/All-active-Workflow/Human/PC/All_active1"
 
 JOBID_1=$(<Job_1.txt)
 PARENT_DIR=$(<pwd.txt)
 
-export ALL_ACTIV_DIR=$PARENT_DIR/All_Active1
+export ALL_ACTIV_DIR=$PARENT_DIR/All_active1
 mkdir -p $ALL_ACTIV_DIR
 
 
